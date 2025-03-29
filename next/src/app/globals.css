@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+/* 전체 기본 설정 */
+body {
+  @apply bg-gray-100 text-gray-800 dark:bg-zinc-900 dark:text-zinc-100;
+  @apply font-sans antialiased;
+}
+
+/* input 파일 선택 영역 */
+input[type="file"] {
+  @apply text-sm text-gray-700 dark:text-zinc-300;
+}
+
+/* 버튼 비활성화 상태 */
+button:disabled {
+  @apply bg-gray-400 dark:bg-zinc-600 cursor-not-allowed;
+}
+
+/* prettier JSON 박스 */
+pre {
+  @apply whitespace-pre-wrap break-words bg-gray-50 dark:bg-zinc-700 text-sm p-2 rounded;
+}
+
+/* 이미지 썸네일 스타일 */
+img {
+  @apply border border-gray-300 dark:border-zinc-700 rounded-md;
+}
+
+/* 스크롤바 스타일 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 dark:bg-zinc-600 rounded;
+}
