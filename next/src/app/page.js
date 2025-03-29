@@ -40,7 +40,7 @@ export default function Home() {
     formData.append("metadata", JSON.stringify(metadata));
     sorted.forEach((r) => formData.append("files", r.file));
 
-    const res = await fetch("http://localhost:8000/export", {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/export`, {
       method: "POST",
       body: formData,
     });
