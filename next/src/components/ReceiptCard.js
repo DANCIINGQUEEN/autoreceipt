@@ -60,7 +60,7 @@ export default function ReceiptCard({ res, dotCycle, onChange }) {
           )}
           {parsed?.is_fnb === false && (
             <p className="mt-1 text-sm font-medium text-red-500">
-              ❗ 항목 수정이 필요합니다
+              ❗ 항목 수정이 필요합니다!
             </p>
           )}
         </div>
